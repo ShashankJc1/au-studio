@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio | AU Studio</title>
+<meta name="description" content="Homes, salons, cafés, offices, gyms, clinics and play schools designed and built by AU Studio.">
+<meta name="theme-color" content="#18211E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Portfolio | AU Studio">
+<meta property="og:description" content="Homes, salons, cafés, offices, gyms, clinics and play schools designed and built by AU Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318211E'/%3E%3Cpath d='M14 56V30a18 18 0 0136 0v26' fill='none' stroke='%23D4AC64' stroke-width='3'/%3E%3Ctext x='32' y='48' font-family='Georgia' font-size='17' fill='%23E9EAE5' text-anchor='middle'%3EAU%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/Flip.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/scenes.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="loader" aria-hidden="true">
+  <svg viewBox="0 0 88 110"><path d="M4 108V48a40 40 0 0180 0v60"/><text class="lt" x="44" y="88" text-anchor="middle">AU</text></svg>
+  <span class="cap">AU Studio · Interior design &amp; build</span>
+  <span class="pct">00</span>
+</div>
+<div class="curtain" aria-hidden="true"></div>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="AU Studio home"><svg class="logo-mark" viewBox="0 0 38 46" aria-hidden="true"><path d="M2 45V20a17 17 0 0134 0v25"/><text x="19" y="37" text-anchor="middle">AU</text></svg><span class="logo-text">AU Studio<small>Interior design</small></span></a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html" aria-current="page">Portfolio</a></li><li><a href="contact.html">Contact</a></li><li><a href="careers.html">Careers</a></li></ul>
+    <div class="nav-right">
+      <a class="btn magnetic" href="contact.html#quote"><span class="dot"></span>Free consultation</a>
+      <button class="menu-btn" aria-controls="menu" aria-expanded="false"><b>Menu</b><i></i></button>
+    </div>
+  </nav>
+</header>
+<div class="menu" id="menu">
+  <ol><li><a href="index.html"><small>01</small>Home</a></li><li><a href="about.html"><small>02</small>About</a></li><li><a href="services.html"><small>03</small>Services</a></li><li><a href="portfolio.html"><small>04</small>Portfolio</a></li><li><a href="contact.html"><small>05</small>Contact</a></li><li><a href="careers.html"><small>06</small>Careers</a></li></ol>
+  <div class="menu-foot"><span>+91 98765 43210</span><span>hello@austudio.in</span><span>Mon to Sat, 10:00 to 19:00</span></div>
+</div>
+<main id="main"><section class="page-hero">
+  <div class="wrap">
+    <span class="crumbs"><a href="index.html">Home</a> / Portfolio</span>
+    <h1 data-split="hero">Selected <span class="it">work</span></h1>
+    <p class="lede" data-intro>Pick a category, then open a project to see its brief, size and materials.</p>
+  </div>
+</section>
+
+<section class="section tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="home" aria-pressed="false">Homes</button>
+      <button type="button" data-filter="salon" aria-pressed="false">Salons &amp; spas</button>
+      <button type="button" data-filter="cafe" aria-pressed="false">Cafés</button>
+      <button type="button" data-filter="office" aria-pressed="false">Offices</button>
+      <button type="button" data-filter="gym" aria-pressed="false">Gyms</button>
+      <button type="button" data-filter="clinic" aria-pressed="false">Clinics</button>
+      <button type="button" data-filter="play" aria-pressed="false">Play schools</button>
+    </div>
+    <div class="pf-grid">
+      <button class="pf-card l" type="button" data-cursor="Open" data-cat="home" data-scene="living" data-tone="sage" data-title="The Linden Apartment" data-brief="A young family wanted a calm, open living space with room for a home office." data-materials="Oak veneer, lime plaster, cane, brushed brass">
+        <div class="scene" data-scene="living" data-tone="sage" data-label="The Linden Apartment"><span class="tag">Residence</span></div>
+        <h3>The Linden Apartment</h3>
+        <div class="specs"><span>Koramangala</span><span>1,850 sq.ft</span><span>11 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="salon" data-scene="salon" data-tone="blush" data-title="Maison Bloom Salon" data-brief="Eight styling stations and two treatment rooms behind a soft, gallery-like reception." data-materials="Terrazzo, blush lacquer, arched mirrors, fluted glass">
+        <div class="scene" data-scene="salon" data-tone="blush" data-label="Maison Bloom Salon"><span class="tag">Salon</span></div>
+        <h3>Maison Bloom Salon</h3>
+        <div class="specs"><span>Indiranagar</span><span>1,200 sq.ft</span><span>7 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="cafe" data-scene="cafe" data-tone="clay" data-title="Grain &amp; Gather Café" data-brief="A neighbourhood café that seats 34 and doubles as a co-working spot by day." data-materials="Terracotta tile, reclaimed teak, rattan pendants">
+        <div class="scene" data-scene="cafe" data-tone="clay" data-label="Grain &amp; Gather Café"><span class="tag">Café</span></div>
+        <h3>Grain &amp; Gather Café</h3>
+        <div class="specs"><span>HSR Layout</span><span>950 sq.ft</span><span>6 weeks</span></div>
+      </button>
+      <button class="pf-card l" type="button" data-cursor="Open" data-cat="office" data-scene="office" data-tone="ocean" data-title="Northline Tech Office" data-brief="A workplace for 80 people with focus booths, four meeting rooms and a large pantry." data-materials="Acoustic felt, white oak, powder-coated steel">
+        <div class="scene" data-scene="office" data-tone="ocean" data-label="Northline Tech Office"><span class="tag">Office</span></div>
+        <h3>Northline Tech Office</h3>
+        <div class="specs"><span>Whitefield</span><span>6,400 sq.ft</span><span>14 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="home" data-scene="bedroom" data-tone="stone" data-title="Hillview Villa Master Suite" data-brief="A master suite with a walk-in wardrobe and a quiet reading nook by the window." data-materials="Smoked oak, linen upholstery, micro-cement">
+        <div class="scene" data-scene="bedroom" data-tone="stone" data-label="Hillview Villa Master Suite"><span class="tag">Residence</span></div>
+        <h3>Hillview Villa Master Suite</h3>
+        <div class="specs"><span>Sarjapur</span><span>720 sq.ft</span><span>5 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="gym" data-scene="gym" data-tone="night" data-title="Forge Strength Club" data-brief="A strength gym with a dedicated lifting zone, mirror walls and locker rooms." data-materials="Rubber flooring, black steel, LED cove lighting">
+        <div class="scene" data-scene="gym" data-tone="night" data-label="Forge Strength Club"><span class="tag">Gym</span></div>
+        <h3>Forge Strength Club</h3>
+        <div class="specs"><span>JP Nagar</span><span>3,200 sq.ft</span><span>9 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="clinic" data-scene="clinic" data-tone="sage" data-title="Evergreen Dental" data-brief="Three dental chairs, a sterilisation room and a waiting area that feels like a lounge." data-materials="Antimicrobial laminate, quartz, sage paint">
+        <div class="scene" data-scene="clinic" data-tone="sage" data-label="Evergreen Dental"><span class="tag">Clinic</span></div>
+        <h3>Evergreen Dental</h3>
+        <div class="specs"><span>Jayanagar</span><span>1,100 sq.ft</span><span>8 weeks</span></div>
+      </button>
+      <button class="pf-card l" type="button" data-cursor="Open" data-cat="home" data-scene="kitchen" data-tone="clay" data-title="Banyan Row House Kitchen" data-brief="An open kitchen with an island for family breakfasts and a hidden pantry wall." data-materials="Matte laminate, quartz top, brass handles">
+        <div class="scene" data-scene="kitchen" data-tone="clay" data-label="Banyan Row House Kitchen"><span class="tag">Residence</span></div>
+        <h3>Banyan Row House Kitchen</h3>
+        <div class="specs"><span>Malleshwaram</span><span>240 sq.ft</span><span>4 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="play" data-scene="play" data-tone="ocean" data-title="Little Orbit Play School" data-brief="Four classrooms, an activity hall and a nap room with child-height storage." data-materials="Vinyl flooring, washable paint, birch ply">
+        <div class="scene" data-scene="play" data-tone="ocean" data-label="Little Orbit Play School"><span class="tag">Play school</span></div>
+        <h3>Little Orbit Play School</h3>
+        <div class="specs"><span>Hebbal</span><span>2,000 sq.ft</span><span>8 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="cafe" data-scene="cafe" data-tone="stone" data-title="Ember Wood-fired Kitchen" data-brief="A 70-cover restaurant built around an open wood-fired oven and chef&#39;s counter." data-materials="Exposed brick, blackened steel, walnut">
+        <div class="scene" data-scene="cafe" data-tone="stone" data-label="Ember Wood-fired Kitchen"><span class="tag">Restaurant</span></div>
+        <h3>Ember Wood-fired Kitchen</h3>
+        <div class="specs"><span>Church Street</span><span>2,600 sq.ft</span><span>12 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="salon" data-scene="salon" data-tone="sage" data-title="Still Water Spa" data-brief="Five treatment rooms and a couples suite with warm, indirect lighting." data-materials="Limewash, travertine, teak slats">
+        <div class="scene" data-scene="salon" data-tone="sage" data-label="Still Water Spa"><span class="tag">Spa</span></div>
+        <h3>Still Water Spa</h3>
+        <div class="specs"><span>Lavelle Road</span><span>1,600 sq.ft</span><span>10 weeks</span></div>
+      </button>
+      <button class="pf-card" type="button" data-cursor="Open" data-cat="office" data-scene="office" data-tone="sage" data-title="Studio Kiln Agency" data-brief="A creative agency floor with a gallery wall and flexible project tables." data-materials="Plywood, cork pinboards, terrazzo">
+        <div class="scene" data-scene="office" data-tone="sage" data-label="Studio Kiln Agency"><span class="tag">Office</span></div>
+        <h3>Studio Kiln Agency</h3>
+        <div class="specs"><span>Domlur</span><span>2,200 sq.ft</span><span>8 weeks</span></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<dialog class="lightbox" aria-label="Project details">
+  <div class="lb-inner">
+    <div class="scene" data-label="Project illustration"></div>
+    <div class="lb-body">
+      <span class="eyebrow" data-lb="count"></span>
+      <h2 data-lb="title"></h2>
+      <div class="specs" data-lb="specs"></div>
+      <p data-lb="brief"></p>
+      <p class="muted"><b style="color:var(--ink)">Materials:</b> <span data-lb="materials"></span></p>
+      <a class="btn" href="contact.html#quote" style="justify-self:start">Start a similar project</a>
+      <div class="lb-nav"><button type="button" data-lb="prev" aria-label="Previous project">←</button><button type="button" data-lb="next" aria-label="Next project">→</button></div>
+    </div>
+  </div>
+  <button class="lb-close" type="button" aria-label="Close">×</button>
+</dialog>
+
+<section class="section paper">
+  <div class="wrap cta-big">
+    <span class="eyebrow">Have a space in mind?</span>
+    <h2 data-split>Let's make it <span class="it">yours</span></h2>
+    <a class="btn magnetic" href="contact.html#quote">Book a free consultation →</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="logo" href="index.html" aria-label="AU Studio home" style="margin-bottom:22px"><svg class="logo-mark" viewBox="0 0 38 46" aria-hidden="true"><path d="M2 45V20a17 17 0 0134 0v25"/><text x="19" y="37" text-anchor="middle">AU</text></svg><span class="logo-text">AU Studio<small style="color:var(--deep-muted)">Interior design</small></span></a>
+        <p style="color:var(--deep-muted)">Design and build studio for homes, hospitality, retail and workplaces.</p>
+        <form class="news" novalidate aria-label="Newsletter"><input id="news-email" type="email" placeholder="Your email for our monthly letter" aria-label="Email address"><button type="submit">Subscribe</button></form>
+        <p class="news-msg" role="status"></p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Spaces</h4>
+        <ul><li><a href="portfolio.html#home">Homes</a></li><li><a href="portfolio.html#salon">Salons &amp; spas</a></li><li><a href="portfolio.html#cafe">Cafés &amp; restaurants</a></li><li><a href="portfolio.html#office">Offices</a></li><li><a href="portfolio.html#clinic">Clinics</a></li></ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul><li>2nd Floor, 14 Lavelle Road, Bengaluru 560001</li><li><a href="tel:+919876543210">+91 98765 43210</a></li><li><a href="mailto:hello@austudio.in">hello@austudio.in</a></li><li>Mon to Sat, 10:00 to 19:00</li></ul>
+        <div style="margin-top:18px"><div class="socials"><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="AU Studio on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="AU Studio on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.5V11H7v4h3v9h4v-9h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="AU Studio on Linkedin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4v12H4zM6 3a2 2 0 110 4 2 2 0 010-4zm5 6h3.8v1.7c.6-1 1.9-2 3.9-2 4 0 4.3 2.6 4.3 6V21h-4v-5.5c0-1.4 0-3.1-1.9-3.1s-2.1 1.5-2.1 3V21h-4z"/></svg></a><a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="AU Studio on Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.5 2.1-.8 3.3-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.5 2.1-4.5 4.4 0 .9.3 1.8.8 2.3l.1.4-.3 1.1c0 .2-.2.2-.4.1-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.5-5.4 6.5-1 0-2-.5-2.4-1.2l-.6 2.5c-.2.9-.9 2.1-1.3 2.8A10 10 0 1012 2z"/></svg></a><a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="AU Studio on Youtube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 00-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 002 8.2 31 31 0 001.6 12 31 31 0 002 15.8a3 3 0 002.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 002.1-2.1c.3-1.2.4-2.5.4-3.8s-.1-2.6-.4-3.8zM10 15V9l5.2 3z"/></svg></a></div></div>
+      </div>
+    </div>
+    <p class="foot-word" aria-hidden="true">AU Studio</p>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> AU Studio. All rights reserved.</span>
+      <span><a href="contact.html">Privacy</a> · <a href="sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="Chat with AU Studio on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span>Chat with us</span></a>
+</body>
+</html>
