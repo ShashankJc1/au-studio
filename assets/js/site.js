@@ -138,20 +138,6 @@
   dots.forEach(function (d, i) { d.addEventListener("click", function () { go(i); }); });
   if (slides.length) { slides[0].classList.add("active"); schedule(); }
 
-  /* Cursor */
-  if (fine && !reduce) {
-    var c = document.createElement("div"); c.className = "cursor"; c.innerHTML = "<b></b>"; document.body.appendChild(c);
-    var mx = -100, my = -100, cx = -100, cy = -100;
-    window.addEventListener("mousemove", function (e) { mx = e.clientX; my = e.clientY; document.body.classList.add("cursor-on"); }, { passive: true });
-    document.addEventListener("mouseleave", function () { document.body.classList.remove("cursor-on"); });
-    (function loop() { cx += (mx - cx) * 0.2; cy += (my - cy) * 0.2; c.style.transform = "translate(" + cx + "px," + cy + "px)"; requestAnimationFrame(loop); })();
-    document.addEventListener("mouseover", function (e) {
-      var l = e.target.closest("[data-cursor]");
-      if (l) { c.className = "cursor big"; $("b", c).textContent = l.dataset.cursor; return; }
-      c.className = e.target.closest("a, button, input, select, textarea, label, summary") ? "cursor link" : "cursor";
-    });
-  }
-
   if (G) {
     /* Text reveals */
     $$("[data-lines]").forEach(function (el) {
@@ -240,18 +226,6 @@
     var sx = null;
     lb.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; }, { passive: true });
     lb.addEventListener("touchend", function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) show(li + (dx < 0 ? 1 : -1)); sx = null; });
-  }
-
-  /* Services: a photo follows the cursor over the list */
-  var hv = $(".hover-img");
-  if (hv && fine) {
-    var hx = 0, hy = 0, tx = 0, ty = 0, hvOn = false;
-    $$(".svc-row a").forEach(function (row, i) {
-      row.addEventListener("mouseenter", function () { hvOn = true; hv.classList.add("on"); $$("img", hv).forEach(function (im, j) { im.classList.toggle("on", j === i); }); });
-      row.addEventListener("mouseleave", function () { hvOn = false; hv.classList.remove("on"); });
-    });
-    window.addEventListener("mousemove", function (e) { tx = e.clientX + 30; ty = e.clientY - 180; }, { passive: true });
-    (function follow() { hx += (tx - hx) * 0.12; hy += (ty - hy) * 0.12; hv.style.transform = "translate(" + hx + "px," + hy + "px)"; requestAnimationFrame(follow); })();
   }
 
   /* Testimonials */
