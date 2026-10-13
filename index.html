@@ -3,353 +3,210 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AU Studio | Interior Design & Build Studio</title>
-<meta name="description" content="AU Studio designs and builds homes, salons, cafés, offices and clinics end to end, from first sketch to move-in day.">
-<meta name="theme-color" content="#18211E">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AU Studio | Interior Design & Build Studio">
-<meta property="og:description" content="AU Studio designs and builds homes, salons, cafés, offices and clinics end to end, from first sketch to move-in day.">
+<title>AU Studio | Interior Design &amp; Build</title>
+<meta name="description" content="AU Studio is an interior design and build studio creating calm, considered homes, workplaces and hospitality spaces.">
+<meta name="theme-color" content="#1A1815">
+<meta property="og:title" content="AU Studio | Interior Design &amp; Build">
+<meta property="og:description" content="Calm, considered interiors for homes, workplaces and hospitality.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318211E'/%3E%3Cpath d='M14 56V30a18 18 0 0136 0v26' fill='none' stroke='%23D4AC64' stroke-width='3'/%3E%3Ctext x='32' y='48' font-family='Georgia' font-size='17' fill='%23E9EAE5' text-anchor='middle'%3EAU%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231A1815'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='24' letter-spacing='2' fill='%23EEE9E0' text-anchor='middle'%3EAU%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/site.css">
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
-<script src="assets/vendor/Flip.min.js" defer></script>
 <script src="assets/vendor/lenis.min.js" defer></script>
-<script src="assets/js/scenes.js" defer></script>
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div class="loader" aria-hidden="true">
-  <svg viewBox="0 0 88 110"><path d="M4 108V48a40 40 0 0180 0v60"/><text class="lt" x="44" y="88" text-anchor="middle">AU</text></svg>
-  <span class="cap">AU Studio · Interior design &amp; build</span>
-  <span class="pct">00</span>
+<a class="skip" href="#studio">Skip to content</a>
+
+<div class="intro" aria-hidden="true">
+  <div class="intro-word"><span>A</span><span>U</span><span>&nbsp;</span><span>S</span><span>T</span><span>U</span><span>D</span><span>I</span><span>O</span></div>
+  <div class="intro-line"><i></i></div>
 </div>
-<div class="curtain" aria-hidden="true"></div>
-<header class="site-header">
-  <nav class="nav wrap" aria-label="Main">
-    <a class="logo" href="index.html" aria-label="AU Studio home"><svg class="logo-mark" viewBox="0 0 38 46" aria-hidden="true"><path d="M2 45V20a17 17 0 0134 0v25"/><text x="19" y="37" text-anchor="middle">AU</text></svg><span class="logo-text">AU Studio<small>Interior design</small></span></a>
-    <ul class="nav-links"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li><li><a href="careers.html">Careers</a></li></ul>
-    <div class="nav-right">
-      <a class="btn magnetic" href="contact.html#quote"><span class="dot"></span>Free consultation</a>
-      <button class="menu-btn" aria-controls="menu" aria-expanded="false"><b>Menu</b><i></i></button>
-    </div>
-  </nav>
+
+<header class="header">
+  <div class="wrap bar">
+    <nav class="nav left" aria-label="Primary">
+      <a href="#studio">Studio</a><a href="#services">Services</a><a href="#projects">Projects</a>
+    </nav>
+    <a class="brand" href="#top" aria-label="AU Studio, back to top"><b>AU STUDIO</b><small>Interior design &amp; build</small></a>
+    <nav class="nav right" aria-label="Secondary">
+      <a href="#process">Process</a><a href="#contact">Contact</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu"><b>Menu</b><i></i></button>
+    </nav>
+  </div>
 </header>
 <div class="menu" id="menu">
-  <ol><li><a href="index.html"><small>01</small>Home</a></li><li><a href="about.html"><small>02</small>About</a></li><li><a href="services.html"><small>03</small>Services</a></li><li><a href="portfolio.html"><small>04</small>Portfolio</a></li><li><a href="contact.html"><small>05</small>Contact</a></li><li><a href="careers.html"><small>06</small>Careers</a></li></ol>
-  <div class="menu-foot"><span>+91 98765 43210</span><span>hello@austudio.in</span><span>Mon to Sat, 10:00 to 19:00</span></div>
-</div>
-<main id="main"><section class="hero">
-  <div class="wrap">
-    <div class="hero-top">
-      <h1 data-split="hero">Rooms that feel <span class="it">like you</span></h1>
-      <div class="hero-side">
-        <p data-intro>AU Studio designs and builds interiors for homes and businesses. One team handles the drawings, materials, carpentry and site work, from first sketch to handover.</p>
-        <div class="hero-actions" data-intro>
-          <a class="btn magnetic" href="contact.html#quote">Book a free consultation</a>
-          <a class="btn ghost" href="#work">See projects</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="stage" data-cursor="Move">
-      <svg viewBox="0 0 1600 820" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustrated living room that changes style">
-        <g class="layer" data-depth="10">
-          <rect class="f-wall" x="-100" y="-50" width="1800" height="920"/>
-          <rect class="f-wall2" x="-100" y="430" width="1800" height="180"/>
-          <rect class="f-dark" x="-100" y="428" width="1800" height="3" opacity=".25"/>
-          <path class="f-sky" d="M1000 560V270a150 150 0 01300 0v290z"/>
-          <circle class="f-accent" cx="1190" cy="300" r="46" opacity=".35"/>
-          <path class="f-leaf" d="M1000 560c40-60 90-80 140-70s90 40 160 20v50z" opacity=".55"/>
-          <path class="s-wood" stroke-width="10" d="M1000 560V270a150 150 0 01300 0v290"/>
-          <path class="s-wood" stroke-width="5" d="M1150 120v440M1000 330h300"/>
-          <rect class="f-wood" x="980" y="556" width="340" height="14" rx="3"/>
-          <path class="f-floor" d="M-100 610H1700V900H-100z"/>
-          <path class="f-dark" d="M-100 610H1700v4H-100z" opacity=".18"/>
-          <path class="f-sky" d="M1010 640h280l60 180H950z" opacity=".22"/>
-        </g>
-        <g class="layer" data-depth="22">
-          <rect class="f-wood" x="300" y="190" width="250" height="190" rx="4"/>
-          <rect class="f-fabric" x="314" y="204" width="222" height="162"/>
-          <circle class="f-art" cx="390" cy="300" r="46"/>
-          <rect class="f-accent" x="420" y="236" width="70" height="100" opacity=".8"/>
-          <path class="f-dark" d="M610 300h180v10H610z" opacity=".9"/>
-          <rect class="f-art" x="630" y="250" width="22" height="50" rx="4"/>
-          <circle class="f-accent" cx="690" cy="282" r="18"/>
-          <rect class="f-fabric" x="726" y="262" width="40" height="38" rx="6"/>
-          <path class="s-dark" stroke-width="3" d="M760 -10v190"/>
-          <path class="f-accent" d="M700 230a60 50 0 01120 0z"/>
-          <ellipse cx="760" cy="232" rx="34" ry="6" fill="#FFF2CF" opacity=".95"/>
-          <path class="s-dark" stroke-width="5" d="M220 640V330M220 330l50-40"/>
-          <path class="f-fabric" d="M240 280h80l-14 50h-52z"/>
-          <ellipse class="f-dark" cx="220" cy="642" rx="40" ry="8"/>
-        </g>
-        <g class="layer" data-depth="36">
-          <ellipse class="f-rug" cx="720" cy="700" rx="470" ry="64"/>
-          <ellipse class="f-dark" cx="720" cy="700" rx="430" ry="52" opacity=".06"/>
-          <rect class="f-fabric" x="400" y="440" width="560" height="120" rx="34"/>
-          <rect class="f-fabric" x="372" y="520" width="616" height="104" rx="30"/>
-          <rect class="f-dark" x="372" y="520" width="616" height="104" rx="30" opacity=".07"/>
-          <rect class="f-fabric" x="360" y="480" width="66" height="150" rx="30"/>
-          <rect class="f-fabric" x="934" y="480" width="66" height="150" rx="30"/>
-          <rect class="f-accent" x="450" y="462" width="110" height="80" rx="18" transform="rotate(-6 505 502)"/>
-          <rect class="f-art" x="580" y="468" width="96" height="74" rx="18" transform="rotate(4 628 505)"/>
-          <rect class="f-wall2" x="820" y="466" width="100" height="78" rx="18" transform="rotate(-3 870 505)"/>
-          <path class="f-wood" d="M410 624h12l-6 40h-6zM940 624h12l-4 40h-6z"/>
-          <ellipse class="f-wood" cx="720" cy="676" rx="140" ry="22"/>
-          <rect class="f-dark" x="652" y="690" width="8" height="66" rx="3"/>
-          <rect class="f-dark" x="780" y="690" width="8" height="66" rx="3"/>
-          <path class="f-fabric" d="M690 640c0-30 10-46 22-46s22 16 22 46z"/>
-          <path class="f-leaf" d="M712 596c-10-40-30-60-50-70 26 0 44 20 50 70zM712 596c8-46 26-66 48-74-20 14-36 34-48 74z"/>
-          <path class="f-fabric" d="M1120 500h210a30 30 0 0130 30v110h-270V530a30 30 0 0130-30z"/>
-          <rect class="f-art" x="1100" y="580" width="280" height="64" rx="22"/>
-          <path class="f-wood" d="M1110 644h10l-8 48h-8zM1360 644h10l4 48h-8z"/>
-        </g>
-        <g class="layer" data-depth="60">
-          <path class="f-fabric" d="M1430 700h120l-16 110h-88z"/>
-          <path class="f-dark" d="M1430 700h120l-2 12h-116z" opacity=".15"/>
-          <ellipse class="f-leaf" cx="1460" cy="540" rx="34" ry="150" transform="rotate(-24 1490 700)"/>
-          <ellipse class="f-leaf" cx="1530" cy="530" rx="34" ry="160" transform="rotate(20 1490 700)" opacity=".85"/>
-          <ellipse class="f-leaf" cx="1490" cy="500" rx="30" ry="170"/>
-          <ellipse class="f-leaf" cx="1420" cy="600" rx="26" ry="110" transform="rotate(-52 1490 700)" opacity=".75"/>
-          <ellipse class="f-leaf" cx="40" cy="760" rx="60" ry="200" transform="rotate(30 40 900)" opacity=".7"/>
-        </g>
-      </svg>
-      <div class="styler">
-        <div class="styler-panel" role="group" aria-label="Try a style on this room">
-          <span>Try a style</span>
-          <button type="button" data-style="japandi" aria-pressed="true">Japandi</button>
-          <button type="button" data-style="midcentury" aria-pressed="false">Mid-century</button>
-          <button type="button" data-style="coastal" aria-pressed="false">Coastal</button>
-          <button type="button" data-style="deco" aria-pressed="false">Art deco</button>
-          <button type="button" data-style="industrial" aria-pressed="false">Industrial</button>
-        </div>
-        <div class="styler-note" aria-live="polite"><b>Japandi calm</b><p>Pale oak, lime plaster and linen, with nothing extra.</p><div class="swatches"><i></i><i></i><i></i><i></i><i></i></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="marquee" aria-label="Spaces we design">
-  <div class="marquee-track">
-    <span>Homes</span><span>Salons</span><span>Cafés</span><span>Offices</span><span>Clinics</span><span>Gyms</span><span>Play schools</span><span>Villas</span>
-    <span aria-hidden="true">Homes</span><span aria-hidden="true">Salons</span><span aria-hidden="true">Cafés</span><span aria-hidden="true">Offices</span><span aria-hidden="true">Clinics</span><span aria-hidden="true">Gyms</span><span aria-hidden="true">Play schools</span><span aria-hidden="true">Villas</span>
-  </div>
+  <ol>
+    <li><a href="#studio">Studio</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#process">Process</a></li><li><a href="#contact">Contact</a></li>
+  </ol>
+  <div class="menu-foot"><span>+91 98765 43210</span><span>hello@austudio.in</span></div>
 </div>
 
-<section class="section">
-  <div class="wrap">
-    <div class="statement-grid">
-      <span class="eyebrow">The studio</span>
-      <div>
-        <p class="statement">We start with how you live: where the morning light lands, where the school bags end up, how many chairs the salon needs at six on a Saturday. <span class="it">The design follows from that.</span></p>
-        <div class="mini-stats">
-          <div><b data-count="450" data-suffix="+">450+</b><span>Projects delivered</span></div>
-          <div><b data-count="320" data-suffix="+">320+</b><span>Happy clients</span></div>
-          <div><b data-count="600000">6,00,000</b><span>Sq.ft designed</span></div>
-          <div><b data-count="12" data-suffix=" yrs">12 yrs</b><span>In practice</span></div>
-        </div>
-      </div>
+<main id="top">
+  <section class="hero" aria-label="Featured projects">
+    <div class="slides">
+      <div class="slide" data-title="The Linden Residence" data-place="Living room · Koramangala"><div class="ph" data-tone="dark"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2200&q=80 2200w" sizes="100vw" alt="The Linden Residence, Living room" decoding="async"></div></div>
+      <div class="slide" data-title="Hillview Villa" data-place="Family lounge · Sarjapur"><div class="ph" data-tone="dark"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=80 2200w" sizes="100vw" alt="Hillview Villa, Family lounge" loading="lazy" decoding="async"></div></div>
+      <div class="slide" data-title="Banyan Row House" data-place="Living and dining · Malleshwaram"><div class="ph" data-tone="dark"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2200&q=80 2200w" sizes="100vw" alt="Banyan Row House, Living and dining" loading="lazy" decoding="async"></div></div>
     </div>
-  </div>
-</section>
-
-<section class="reel section tight paper" id="work">
-  <div class="wrap reel-head">
-    <div class="stack"><span class="eyebrow">Selected work</span><h2 data-split>Recent projects</h2></div>
-    <a class="link" href="portfolio.html">View all projects →</a>
-  </div>
-  <div class="reel-track">
-    <a class="reel-card" href="portfolio.html#home" data-cursor="View"><div class="scene" data-scene="living" data-tone="sage" data-label="Linden Apartment living room"><span class="tag">Residence</span></div><div class="reel-meta"><h3>The Linden Apartment</h3><small>1,850 sq.ft</small></div></a>
-    <a class="reel-card" href="portfolio.html#salon" data-cursor="View"><div class="scene" data-scene="salon" data-tone="blush" data-label="Maison Bloom salon"><span class="tag">Salon</span></div><div class="reel-meta"><h3>Maison Bloom</h3><small>1,200 sq.ft</small></div></a>
-    <a class="reel-card" href="portfolio.html#cafe" data-cursor="View"><div class="scene" data-scene="cafe" data-tone="clay" data-label="Grain and Gather café"><span class="tag">Café</span></div><div class="reel-meta"><h3>Grain &amp; Gather</h3><small>950 sq.ft</small></div></a>
-    <a class="reel-card" href="portfolio.html#office" data-cursor="View"><div class="scene" data-scene="office" data-tone="ocean" data-label="Northline office"><span class="tag">Office</span></div><div class="reel-meta"><h3>Northline Tech</h3><small>6,400 sq.ft</small></div></a>
-    <a class="reel-card" href="portfolio.html#home" data-cursor="View"><div class="scene" data-scene="bedroom" data-tone="stone" data-label="Hillview Villa bedroom"><span class="tag">Residence</span></div><div class="reel-meta"><h3>Hillview Villa</h3><small>720 sq.ft</small></div></a>
-    <a class="reel-card" href="portfolio.html#gym" data-cursor="View"><div class="scene" data-scene="gym" data-tone="night" data-label="Forge Strength gym"><span class="tag">Gym</span></div><div class="reel-meta"><h3>Forge Strength Club</h3><small>3,200 sq.ft</small></div></a>
-    <div class="reel-end"><h3>Your space could be next.</h3><p class="muted">Send a floor plan and get layout ideas within a week.</p><a class="btn" href="contact.html#quote">Start a project</a></div>
-  </div>
-  <div class="reel-progress"><i></i></div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="head">
-      <div><span class="eyebrow">What we design</span><h2 data-split>Services</h2></div>
-      <p class="lede">Each one can be taken as design only, or as a full turnkey project with one quote and one team.</p>
-    </div>
-    <ul class="svc-list">
-      <li class="svc-item" data-pscene="living" data-ptone="clay"><a href="services.html#home"><h3>Home interiors</h3><p>Apartments, villas and independent houses, single rooms or the whole home.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="kitchen" data-ptone="sage"><a href="services.html#kitchen"><h3>Kitchens &amp; wardrobes</h3><p>Factory-finished modular cabinetry, planned to the millimetre.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="salon" data-ptone="blush"><a href="services.html#salon"><h3>Salons &amp; spas</h3><p>Stations, wash zones and treatment rooms laid out for client flow.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="cafe" data-ptone="stone"><a href="services.html#cafe"><h3>Cafés &amp; restaurants</h3><p>Dining rooms with character, kitchens that hold up in the rush.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="office" data-ptone="ocean"><a href="services.html#office"><h3>Offices</h3><p>Workspaces sized to your headcount now and next year.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="clinic" data-ptone="sage"><a href="services.html#clinic"><h3>Clinics</h3><p>Calm waiting areas and hygienic, easy-clean consult rooms.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="gym" data-ptone="night"><a href="services.html#gym"><h3>Gyms &amp; studios</h3><p>Rubber floors, mirror walls and light that suits training.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="play" data-ptone="ocean"><a href="services.html#play"><h3>Play schools</h3><p>Child-safe edges, washable surfaces and bright zoning.</p><span class="arrow-c">→</span></a></li>
-      <li class="svc-item" data-pscene="bare" data-ptone="stone"><a href="services.html#turnkey"><h3>Turnkey renovation</h3><p>Civil, electrical, ceilings, paint and furniture, as one contract.</p><span class="arrow-c">→</span></a></li>
-    </ul>
-  </div>
-</section>
-
-<section class="section paper">
-  <div class="wrap ba-grid">
-    <div class="stack" style="gap:26px">
-      <span class="eyebrow">Before / after</span>
-      <h2 data-split>Same walls, <span class="it">new life</span></h2>
-      <p class="muted">A dated 3BHK in Jayanagar, opened up into one bright living and dining space. Drag the handle to compare.</p>
-      <dl class="ba-specs">
-        <div><dt>Area</dt><dd>1,640 sq.ft</dd></div>
-        <div><dt>Timeline</dt><dd>10 weeks</dd></div>
-        <div><dt>Walls moved</dt><dd>2</dd></div>
-        <div><dt>Storage added</dt><dd>+38%</dd></div>
-      </dl>
-    </div>
-    <div class="ba" data-reveal>
-      <div class="scene" data-scene="bare" data-label="Room before renovation"></div>
-      <div class="scene after" data-scene="living" data-tone="clay" data-label="Room after renovation"></div>
-      <span class="lab l">Before</span><span class="lab r">After</span>
-      <span class="bar"></span><span class="knob" aria-hidden="true">‹ ›</span>
-      <input type="range" id="ba-range" min="0" max="100" value="50" aria-label="Compare before and after">
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="head"><div><span class="eyebrow">Why AU Studio</span><h2 data-split>What you can count on</h2></div></div>
-    <div class="bento" data-stagger>
-      <div class="tile big photo"><div class="scene" data-scene="kitchen" data-tone="clay" data-label="Kitchen built by our in-house unit"></div><div class="chiprow"><span>In-house carpentry</span><span>Factory finish</span></div><div class="stack" style="gap:12px"><h3>Made in our own workshop</h3><p>Kitchens, wardrobes and custom furniture are built in our production unit, so quality and dates stay in our hands.</p></div></div>
-      <div class="tile dark"><span class="eyebrow">Warranty</span><svg class="ring" viewBox="0 0 110 110"><circle cx="55" cy="55" r="48" stroke="var(--deep-line)"/><circle class="fg" cx="55" cy="55" r="48" stroke="var(--brass)" transform="rotate(-90 55 55)" stroke-linecap="round"/><text x="55" y="64" text-anchor="middle" font-family="Instrument Serif, Georgia, serif" font-size="30" fill="currentColor">10 yr</text></svg><p>On all modular woodwork, plus a free service visit in year one.</p></div>
-      <div class="tile brass"><span class="big-num" data-count="98" data-suffix="%">98%</span><p>Projects handed over on or before the date in the contract.</p></div>
-      <div class="tile wide"><div class="stack" style="gap:12px"><h3>One team, one contract</h3><p>A dedicated designer and site lead, weekly photo updates, and a single point of contact from layout to keys.</p></div><div class="chiprow"><span>Designer</span><span>Site lead</span><span>Weekly updates</span><span>Itemised quote</span></div></div>
-      <div class="tile"><h3>Honest numbers</h3><p>Every quote names the brand and grade of each material, so you can compare like for like.</p></div>
-      <div class="tile"><h3>Material library</h3><p>Touch 400+ laminates, veneers, stones and fabrics at our studio before you choose.</p></div>
-      <div class="tile wide dark"><div class="stack" style="gap:12px"><h3>See it in 3D first</h3><p>Walk through photoreal views of every key room and change finishes before anything is built.</p></div><div class="chiprow"><span>3D views</span><span>Material board</span><span>Unlimited tweaks</span></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section deep">
-  <div class="wrap process">
-    <div class="process-intro">
-      <span class="eyebrow">How it works</span>
-      <h2 data-split>From first call to <span class="it">move-in</span></h2>
-      <p class="muted">Four clear stages, each signed off by you before we move to the next.</p>
-      <a class="btn" href="contact.html#quote" style="justify-self:start">Book stage one, free</a>
-    </div>
-    <div class="cards">
-      <article class="pcard" style="--i:0"><div><span class="n">Stage 01 · Week 0</span><h3>Meet your designer</h3><p>A free consultation at our studio or on site. We measure, listen and talk budget openly.</p><ul><li>Site survey</li><li>Brief</li><li>Budget range</li></ul></div><div class="scene" data-scene="bare" data-label="Empty room before design"></div></article>
-      <article class="pcard" style="--i:1"><div><span class="n">Stage 02 · Weeks 1 to 3</span><h3>Approve the design</h3><p>Layouts, 3D views and a material board, revised until it feels right. Then a fixed, itemised quote.</p><ul><li>3D views</li><li>Material board</li><li>Fixed quote</li></ul></div><div class="scene" data-scene="detail" data-tone="sage" data-label="Material details"></div></article>
-      <article class="pcard" style="--i:2"><div><span class="n">Stage 03 · Weeks 4 to 10</span><h3>We build</h3><p>Site work and factory-made joinery run in parallel. You get photo updates every week.</p><ul><li>Civil &amp; electrical</li><li>Modular install</li><li>Weekly photos</li></ul></div><div class="scene" data-scene="kitchen" data-tone="stone" data-label="Kitchen being built"></div></article>
-      <article class="pcard" style="--i:3"><div><span class="n">Stage 04 · Handover</span><h3>Move in</h3><p>Deep clean, snag check and styling. Keys and the warranty card are handed over together.</p><ul><li>Snag list</li><li>Styling</li><li>Warranty</li></ul></div><div class="scene" data-scene="living" data-tone="clay" data-label="Finished living room"></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="estimate">
-  <div class="wrap">
-    <div class="head"><div><span class="eyebrow">Cost estimator</span><h2 data-split>What will it cost?</h2></div><p class="lede">Move the sliders for an instant budget range. Your final quote is itemised after a site visit.</p></div>
-    <div class="est" id="estimator" data-reveal>
-      <form class="est-form" onsubmit="return false">
-        <fieldset class="q">
-          <legend>Type of space</legend>
-          <div class="seg">
-            <label><input type="radio" name="e-type" id="e-home" value="home" checked><span>Home</span></label>
-            <label><input type="radio" name="e-type" id="e-kitchen" value="kitchen"><span>Kitchen</span></label>
-            <label><input type="radio" name="e-type" id="e-salon" value="salon"><span>Salon / spa</span></label>
-            <label><input type="radio" name="e-type" id="e-cafe" value="cafe"><span>Café</span></label>
-            <label><input type="radio" name="e-type" id="e-office" value="office"><span>Office</span></label>
-            <label><input type="radio" name="e-type" id="e-clinic" value="clinic"><span>Clinic</span></label>
-          </div>
-        </fieldset>
-        <div class="q">
-          <label for="e-area">Carpet area <output id="e-area-out">1,200 sq.ft</output></label>
-          <input class="slider" type="range" id="e-area" min="100" max="5000" step="50" value="1200">
-        </div>
-        <fieldset class="q">
-          <legend>Finish level</legend>
-          <div class="seg">
-            <label><input type="radio" name="e-finish" id="e-ess" value="essential"><span>Essential</span></label>
-            <label><input type="radio" name="e-finish" id="e-pre" value="premium" checked><span>Premium</span></label>
-            <label><input type="radio" name="e-finish" id="e-lux" value="luxe"><span>Luxe</span></label>
-          </div>
-        </fieldset>
-      </form>
-      <div class="est-out" aria-live="polite">
-        <div class="stack" style="gap:10px">
-          <span class="eyebrow" style="color:var(--deep-muted)">Estimated budget</span>
-          <div class="est-total" id="e-total">₹15.7 L to ₹19.5 L</div>
-        </div>
-        <div class="est-rows">
-          <div><span>Average rate</span><b id="e-rate">₹1,450 / sq.ft</b></div>
-          <div><span>Design phase</span><b id="e-design">2 to 3 weeks</b></div>
-          <div><span>Build time</span><b id="e-weeks">8 weeks</b></div>
-        </div>
+    <div class="hero-inner">
+      <div class="wrap hero-grid">
         <div>
-          <div class="bar-split"><i style="flex-grow:44;background:var(--brass)"></i><i style="flex-grow:22;background:#7F8F7C"></i><i style="flex-grow:18;background:#C9B48C"></i><i style="flex-grow:16;background:#5B6862"></i></div>
-          <div class="legend"><span><i style="background:var(--brass)"></i>Joinery</span><span><i style="background:#7F8F7C"></i>Civil &amp; electrical</span><span><i style="background:#C9B48C"></i>Finishes</span><span><i style="background:#5B6862"></i>Furniture &amp; décor</span></div>
+          <span class="label" data-fade>Interior design &amp; build studio · Bengaluru</span>
+          <h1 data-lines>Interiors with <em>quiet</em> confidence</h1>
         </div>
-        <a class="btn" href="contact.html#quote" style="justify-self:start">Get an exact quote</a>
+        <div class="hero-side" data-fade>
+          <p class="hero-caption" aria-live="polite"><b>The Linden Residence</b>Living room · Koramangala</p>
+          <div style="display:flex;align-items:center;gap:18px">
+            <span class="counter"><b>01</b> / 03</span>
+            <div class="dots">
+              <button type="button" aria-label="Show slide 1" aria-current="true"><i></i></button>
+              <button type="button" aria-label="Show slide 2" aria-current="false"><i></i></button>
+              <button type="button" aria-label="Show slide 3" aria-current="false"><i></i></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </section>
 
-<section class="section paper">
-  <div class="wrap">
-    <div class="head"><div><span class="eyebrow">Client words</span><h2 data-split>Kind words</h2></div><div class="q-nav"><button type="button" data-q="prev" aria-label="Previous review">←</button><button type="button" data-q="next" aria-label="Next review">→</button></div></div>
-    <div class="quotes" data-cursor="Drag">
-      <figure class="quote"><span class="stars" aria-label="5 out of 5">★★★★★</span><blockquote>“They found room for a work desk and a reading corner in our 2BHK. Handover was two days early.”</blockquote><figcaption><span class="avatar">A</span><span><b>Ananya R.</b>Homeowner, 2BHK apartment</span></figcaption></figure>
-      <figure class="quote"><span class="stars" aria-label="5 out of 5">★★★★★</span><blockquote>“Client flow in the salon is so much smoother. Our stylists noticed it on the first Saturday.”</blockquote><figcaption><span class="avatar">K</span><span><b>Karthik M.</b>Salon owner</span></figcaption></figure>
-      <figure class="quote"><span class="stars" aria-label="5 out of 5">★★★★★</span><blockquote>“Clear costs from day one and a site lead who always picked up the phone.”</blockquote><figcaption><span class="avatar">P</span><span><b>Priya S.</b>Founder, design agency</span></figcaption></figure>
-      <figure class="quote"><span class="stars" aria-label="5 out of 5">★★★★★</span><blockquote>“Patients tell us the clinic feels calm, which was the whole brief.”</blockquote><figcaption><span class="avatar">D</span><span><b>Dr. Rao</b>Dental clinic</span></figcaption></figure>
+  <section class="section" id="studio">
+    <div class="wrap studio">
+      <div class="ph arch" data-clip><img class="zoom" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 90vw, 40vw" alt="Sunlit living room corner with a lounge chair and plants" loading="lazy" decoding="async"></div>
+      <div class="studio-copy">
+        <span class="label" data-up>The studio</span>
+        <p class="lede" data-lines>We design rooms that feel <em>effortless</em> to live in, and we build them with the same care we draw them.</p>
+        <div class="studio-cols" data-stagger>
+          <p>AU Studio is a team of interior designers, site engineers and craftspeople. We take a project from the first measured survey to the last cushion, so nothing gets lost between the drawing and the room.</p>
+          <p>Our work is calm and material-led: natural light, honest timber, stone and linen, and storage that disappears into the architecture. Every space is shaped around the people who use it.</p>
+        </div>
+        <div class="sig" data-up><span class="label">Est. 2014 · Bengaluru</span></div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="wrap cta-big">
-    <span class="eyebrow">Have a space in mind?</span>
-    <h2 data-split>Let's design <span class="it">yours</span></h2>
-    <p>The first consultation is free, with no obligation.</p>
-    <a class="btn magnetic" href="contact.html#quote">Book a free consultation →</a>
-  </div>
-</section>
+  <section class="section" id="services" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="label" data-up>What we do</span><h2 data-lines>Spaces for living, working <em>and gathering</em></h2></div>
+        <p data-up>Design only, or design and build. Each project has one dedicated designer and one site lead from first sketch to handover.</p>
+      </div>
+      <div class="svc" data-stagger>
+        <a class="svc-card" href="#contact" data-cursor="Explore"><div class="ph"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 100vw, 33vw" alt="Bright open-plan home interior" loading="lazy" decoding="async"></div><div class="body"><span class="num">I · Residential</span><h3>Homes</h3><p>Apartments, villas and independent houses. Full homes, kitchens, wardrobes and single rooms.</p><span class="ulink">Explore <span class="ar">→</span></span></div></a>
+        <a class="svc-card" href="#contact" data-cursor="Explore"><div class="ph" data-tone="cool"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 100vw, 33vw" alt="Modern office with long workbench and plants" loading="lazy" decoding="async"></div><div class="body"><span class="num">II · Workplace</span><h3>Offices</h3><p>Workspaces, meeting rooms and breakout areas planned around how your team actually works.</p><span class="ulink">Explore <span class="ar">→</span></span></div></a>
+        <a class="svc-card" href="#contact" data-cursor="Explore"><div class="ph" data-tone="dark"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 100vw, 33vw" alt="Warmly lit restaurant dining room" loading="lazy" decoding="async"></div><div class="body"><span class="num">III · Hospitality &amp; retail</span><h3>Cafés, salons &amp; clinics</h3><p>Spaces that welcome guests, work hard during the rush, and stay easy to maintain.</p><span class="ulink">Explore <span class="ar">→</span></span></div></a>
+      </div>
+      <div class="sectors" data-up><span>Apartments</span><span>Villas</span><span>Kitchens</span><span>Offices</span><span>Cafés</span><span>Salons</span><span>Clinics</span></div>
+    </div>
+  </section>
+
+  <section class="projects section" id="projects">
+    <div class="pj-track">
+      <div class="pj-intro">
+        <span class="label">Selected projects</span>
+        <h2 data-lines>Recent <em>work</em></h2>
+        <p>A few of the homes and spaces we've designed and built. Each one began with a conversation about how the people in it live.</p>
+        <a class="ulink" href="#contact" style="justify-self:start">Start your project <span class="ar">→</span></a>
+      </div>
+      <a class="pj w1" href="#contact" data-cursor="View"><div class="ph"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 80vw, 46vw" alt="Living room with neutral sofa and large windows" loading="lazy" decoding="async"></div><div class="pj-meta"><h3>The Linden Residence</h3><span>Koramangala · 1,850 sq.ft</span></div></a>
+      <a class="pj w2 low" href="#contact" data-cursor="View"><div class="ph"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 80vw, 30vw" alt="Kitchen with island and pendant lights" loading="lazy" decoding="async"></div><div class="pj-meta"><h3>Banyan Row Kitchen</h3><span>Malleshwaram</span></div></a>
+      <a class="pj w3" href="#contact" data-cursor="View"><div class="ph"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 80vw, 38vw" alt="Calm bedroom with linen bedding" loading="lazy" decoding="async"></div><div class="pj-meta"><h3>Hillview Villa Suite</h3><span>Sarjapur · 720 sq.ft</span></div></a>
+      <a class="pj w2 low" href="#contact" data-cursor="View"><div class="ph" data-tone="dark"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 80vw, 30vw" alt="Café interior with wooden tables" loading="lazy" decoding="async"></div><div class="pj-meta"><h3>Grain &amp; Gather Café</h3><span>HSR Layout</span></div></a>
+      <a class="pj w1" href="#contact" data-cursor="View"><div class="ph" data-tone="cool"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 80vw, 46vw" alt="Open living and dining area" loading="lazy" decoding="async"></div><div class="pj-meta"><h3>Northline Penthouse</h3><span>Whitefield · 3,100 sq.ft</span></div></a>
+    </div>
+    <div class="pj-progress" aria-hidden="true"><i></i></div>
+  </section>
+
+  <section class="band" aria-label="Our philosophy">
+    <div class="ph" data-parallax="8" data-tone="dark"><img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=2200&q=80 2200w" sizes="100vw" alt="Quiet living room in soft daylight" loading="lazy" decoding="async"></div>
+    <blockquote data-lines>A good room never shouts. It simply feels <em>right</em>.<cite>The AU Studio approach</cite></blockquote>
+  </section>
+
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="label" data-up>How we work</span><h2 data-lines>From first visit <em>to move-in</em></h2></div>
+        <p data-up>Four clear stages, each signed off by you before the next begins. One contract and one point of contact throughout.</p>
+      </div>
+      <ol class="steps" data-stagger>
+        <li><h3>Consultation</h3><p>We visit, measure and listen: your routines, your must-haves and an honest budget range. The first visit is free.</p></li>
+        <li><h3>Design</h3><p>Layouts, 3D views and a curated material palette, refined with you until every room feels right. Then a fixed, itemised quote.</p></li>
+        <li><h3>Build</h3><p>Civil work, joinery and finishes run to a written schedule, with a site lead on hand and weekly photo updates.</p></li>
+        <li><h3>Handover</h3><p>A detailed snag check, a deep clean and final styling. You receive the keys, the warranty and a home ready to live in.</p></li>
+      </ol>
+      <div class="figures">
+        <div><b data-count="12">12</b><span>Years of practice</span></div>
+        <div><b data-count="450" data-suffix="+">450+</b><span>Projects delivered</span></div>
+        <div><b data-count="98" data-suffix="%">98%</b><span>Handed over on time</span></div>
+        <div><b data-count="10" data-suffix=" yr">10 yr</b><span>Joinery warranty</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="voices section" aria-label="Client testimonials">
+    <div class="wrap">
+      <span class="label">Kind words</span>
+      <div class="voice-stage" aria-live="polite">
+        <figure class="voice on"><blockquote>“They understood how we live better than we did. The house feels calm, and it works for all four of us.”</blockquote><figcaption><b>Ananya &amp; Rohit</b>Homeowners · Koramangala</figcaption></figure>
+        <figure class="voice"><blockquote>“Clear costs from the first meeting and a handover two days early. I'd hire them again without a second thought.”</blockquote><figcaption><b>Priya S.</b>Founder · Design agency office</figcaption></figure>
+        <figure class="voice"><blockquote>“Our guests notice the space before they notice the menu. That was exactly the brief.”</blockquote><figcaption><b>Karthik M.</b>Owner · Grain &amp; Gather Café</figcaption></figure>
+      </div>
+      <div class="voice-nav"><button type="button" data-v="prev" aria-label="Previous testimonial">←</button><span class="voice-count">01 / 03</span><button type="button" data-v="next" aria-label="Next testimonial">→</button></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="strip-head"><div><span class="label" data-up>Details</span><h2 data-lines style="margin-top:18px">In the <em>details</em></h2></div><a class="ulink" href="#projects">See projects <span class="ar">→</span></a></div>
+      <div class="strip" data-stagger>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 760px) 50vw, 22vw" alt="Textured lounge chair beside a side table" loading="lazy" decoding="async"></div>
+        <div class="ph" data-tone="olive"><img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 760px) 50vw, 16vw" alt="Sculptural vase on a console" loading="lazy" decoding="async"></div>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 760px) 50vw, 20vw" alt="Bedroom corner with soft textiles" loading="lazy" decoding="async"></div>
+        <div class="ph" data-tone="cool"><img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 760px) 50vw, 18vw" alt="Kitchen detail with stone counter" loading="lazy" decoding="async"></div>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 760px) 50vw, 22vw" alt="Living room with natural materials" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="begin" id="contact">
+    <div class="ph" data-tone="olive"><img class="zoom" src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=1600&q=80" srcset="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=1600&q=80 1600w, https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=2200&q=80 2200w" sizes="(max-width: 900px) 100vw, 50vw" alt="Elegant living room with curved sofa" loading="lazy" decoding="async"></div>
+    <div class="begin-body">
+      <span class="label" data-up>Begin a project</span>
+      <h2 data-lines>Let's create something <em>lasting</em></h2>
+      <form class="form" data-validate novalidate aria-label="Request a free consultation">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required><span class="err"></span></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><span class="err"></span></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err"></span></div>
+        <div class="field"><label for="f-type">Project</label><select id="f-type" name="type" required><option value="">Choose one</option><option>Full home</option><option>Kitchen &amp; wardrobes</option><option>Office</option><option>Café or restaurant</option><option>Salon or clinic</option><option>Something else</option></select><span class="err"></span></div>
+        <div class="full"><button class="btn" type="submit">Request a consultation <span class="ar">→</span></button></div>
+      </form>
+      <div class="contact-lines">
+        <div><span class="label">Visit</span>14 Lavelle Road, Bengaluru</div>
+        <div><span class="label">Call</span><a href="tel:+919876543210">+91 98765 43210</a></div>
+        <div><span class="label">Write</span><a href="mailto:hello@austudio.in">hello@austudio.in</a></div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="site-footer">
+
+<footer class="footer">
   <div class="wrap">
-    <div class="foot-top">
-      <div>
-        <a class="logo" href="index.html" aria-label="AU Studio home" style="margin-bottom:22px"><svg class="logo-mark" viewBox="0 0 38 46" aria-hidden="true"><path d="M2 45V20a17 17 0 0134 0v25"/><text x="19" y="37" text-anchor="middle">AU</text></svg><span class="logo-text">AU Studio<small style="color:var(--deep-muted)">Interior design</small></span></a>
-        <p style="color:var(--deep-muted)">Design and build studio for homes, hospitality, retail and workplaces.</p>
-        <form class="news" novalidate aria-label="Newsletter"><input id="news-email" type="email" placeholder="Your email for our monthly letter" aria-label="Email address"><button type="submit">Subscribe</button></form>
-        <p class="news-msg" role="status"></p>
-      </div>
-      <div>
-        <h4>Studio</h4>
-        <ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul>
-      </div>
-      <div>
-        <h4>Spaces</h4>
-        <ul><li><a href="portfolio.html#home">Homes</a></li><li><a href="portfolio.html#salon">Salons &amp; spas</a></li><li><a href="portfolio.html#cafe">Cafés &amp; restaurants</a></li><li><a href="portfolio.html#office">Offices</a></li><li><a href="portfolio.html#clinic">Clinics</a></li></ul>
-      </div>
-      <div>
-        <h4>Visit</h4>
-        <ul><li>2nd Floor, 14 Lavelle Road, Bengaluru 560001</li><li><a href="tel:+919876543210">+91 98765 43210</a></li><li><a href="mailto:hello@austudio.in">hello@austudio.in</a></li><li>Mon to Sat, 10:00 to 19:00</li></ul>
-        <div style="margin-top:18px"><div class="socials"><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="AU Studio on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="AU Studio on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.5V11H7v4h3v9h4v-9h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="AU Studio on Linkedin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4v12H4zM6 3a2 2 0 110 4 2 2 0 010-4zm5 6h3.8v1.7c.6-1 1.9-2 3.9-2 4 0 4.3 2.6 4.3 6V21h-4v-5.5c0-1.4 0-3.1-1.9-3.1s-2.1 1.5-2.1 3V21h-4z"/></svg></a><a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="AU Studio on Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.5 2.1-.8 3.3-.2 1 .5 1.8 1.5 1.8 1.8 0 3.1-1.9 3.1-4.6 0-2.4-1.7-4.1-4.2-4.1-2.9 0-4.5 2.1-4.5 4.4 0 .9.3 1.8.8 2.3l.1.4-.3 1.1c0 .2-.2.2-.4.1-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.5-5.4 6.5-1 0-2-.5-2.4-1.2l-.6 2.5c-.2.9-.9 2.1-1.3 2.8A10 10 0 1012 2z"/></svg></a><a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="AU Studio on Youtube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 00-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 002 8.2 31 31 0 001.6 12 31 31 0 002 15.8a3 3 0 002.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 002.1-2.1c.3-1.2.4-2.5.4-3.8s-.1-2.6-.4-3.8zM10 15V9l5.2 3z"/></svg></a></div></div>
-      </div>
+    <div class="foot-grid">
+      <div><p class="foot-lede">Calm, considered interiors, designed and built by one team.</p></div>
+      <div><span class="label">Explore</span><ul><li><a href="#studio">Studio</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#process">Process</a></li></ul></div>
+      <div><span class="label">Studio</span><ul><li>14 Lavelle Road</li><li>Bengaluru 560001</li><li>Mon to Sat, 10 to 7</li></ul></div>
+      <div><span class="label">Contact</span><ul><li><a href="tel:+919876543210">+91 98765 43210</a></li><li><a href="mailto:hello@austudio.in">hello@austudio.in</a></li><li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://pinterest.com/" target="_blank" rel="noopener">Pinterest</a></li></ul></div>
     </div>
-    <p class="foot-word" aria-hidden="true">AU Studio</p>
-    <div class="foot-bottom">
-      <span>© <span data-year>2026</span> AU Studio. All rights reserved.</span>
-      <span><a href="contact.html">Privacy</a> · <a href="sitemap.xml">Sitemap</a></span>
-    </div>
+    <p class="wordmark" aria-hidden="true">AU STUDIO</p>
+    <div class="foot-bottom"><span>© <span data-year>2026</span> AU Studio</span><span>Photography: Unsplash (placeholder until project photos arrive)</span></div>
   </div>
 </footer>
-<a class="wa-float" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="Chat with AU Studio on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span>Chat with us</span></a>
+<a class="wa" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="Chat with AU Studio on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
 </body>
 </html>
