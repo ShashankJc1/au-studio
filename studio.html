@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@400;500&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231A1815'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='24' letter-spacing='2' fill='%23EEE9E0' text-anchor='middle'%3EAU%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/site.css?v=4cff93cd">
+<link rel="stylesheet" href="assets/css/site.css?v=3487de1d">
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/vendor/lenis.min.js" defer></script>
@@ -24,7 +24,7 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="curtain" aria-hidden="true"><b>AU</b></div>
-<header class="header solid">
+<header class="header">
   <div class="wrap bar">
     <nav class="nav left" aria-label="Primary"><a href="studio.html" aria-current="page">Studio</a><a href="services.html">Services</a><a href="projects.html">Projects</a></nav>
     <a class="brand" href="index.html" aria-label="AU Studio home"><b>AU STUDIO</b><small>Interior design &amp; build</small></a>
@@ -39,18 +39,16 @@
 </div>
 
 <main id="main">
-  <section class="split-hero">
-    <div class="copy page-in">
-      <span class="label" data-fade>The studio</span>
-      <h1 data-lines>Designers and builders, <em>one team</em></h1>
-      <p data-fade>AU Studio is a Bengaluru team of interior designers, site engineers and craftspeople. We take a project from the first measured survey to the last cushion, so nothing gets lost between the drawing and the room.</p>
+  <section class="cover page-cover" aria-label="The studio">
+    <div class="ph" data-tone="dark"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1600" srcset="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=640 640w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1000 1000w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1600 1600w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2200 2200w" sizes="100vw" alt="Warm, sunlit family lounge" decoding="async"></div>
+    <div class="cover-in">
+      <div class="wrap page-in">
+        <div><span class="label" data-fade>The studio</span><h1 data-lines>Designers and builders, <em>one team</em></h1></div>
+        <div class="side" data-fade><p>AU Studio is a Bengaluru team of interior designers, site engineers and craftspeople. We take a project from the first measured survey to the last cushion, so nothing gets lost between the drawing and the room.</p></div>
+      </div>
     </div>
-    <div class="ph" data-tone="dark" data-clip><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1600" srcset="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=640 640w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1000 1000w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1600 1600w, https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2200 2200w" sizes="(max-width: 900px) 100vw, 50vw" alt="Warm, sunlit family lounge" decoding="async"></div>
   </section>
-  <section class="section manifesto">
-    <div class="wrap"><span class="label" data-up>What we believe</span><p data-lines style="margin-top:28px">A home should feel <em>calm</em> the moment you walk in, and stay easy to live in for years.</p></div>
-  </section>
-  <section class="section" style="padding-top:0">
+  <section class="section">
     <div class="wrap studio">
       <div class="ph arch" data-clip><img class="zoom" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1600" srcset="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=640 640w, https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1000 1000w, https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1600 1600w, https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=2200 2200w" sizes="(max-width: 900px) 90vw, 40vw" alt="Sunlit living room corner with a lounge chair and plants" loading="lazy" decoding="async"></div>
       <div class="studio-copy">
@@ -73,6 +71,10 @@
         <li><span class="n">03</span><h3>One team, start to finish</h3><p>One designer and one site lead for the whole project. Weekly updates, a written schedule and a single point of contact.</p></li>
       </ul>
     </div>
+  </section>
+  <section class="band" aria-label="What we believe">
+    <div class="ph" data-parallax="8" data-tone="dark"><img src="assets/img/work/duplex-residence/04-1600.jpg" srcset="assets/img/work/duplex-residence/04-800.jpg 800w, assets/img/work/duplex-residence/04-1600.jpg 1600w" sizes="100vw" width="1920" height="1080" alt="Calm bedroom with sheer curtains and a lit display niche" loading="lazy" decoding="async"></div>
+    <blockquote data-lines>A home should feel <em>calm</em> the moment you walk in, and stay easy to live in for years.<cite>What we believe</cite></blockquote>
   </section>
   <section class="section" id="process" style="background:var(--linen)">
     <div class="wrap sticky-split">

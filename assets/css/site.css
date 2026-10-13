@@ -246,7 +246,7 @@ p { margin: 0; }
 .band { position: relative; height: clamp(520px, 92vh, 900px); color: var(--white); display: grid; place-items: center; text-align: center; overflow: hidden; }
 .band .ph { position: absolute; inset: -12% 0; }
 .band .ph img { height: 100%; }
-.band::after { content: ""; position: absolute; inset: 0; background: rgba(20,17,14,.42); }
+.band::after { content: ""; position: absolute; inset: 0; background: rgba(20,17,14,.5); }
 .band blockquote { position: relative; z-index: 1; margin: 0; padding-inline: var(--gutter); max-width: 22ch; font-family: var(--f-serif); font-weight: 300; font-size: var(--s-3xl); line-height: 1.08; }
 .band cite { display: block; margin-top: 30px; font-family: var(--f-sans); font-style: normal; font-size: var(--s-xs); letter-spacing: .24em; text-transform: uppercase; opacity: .85; }
 
@@ -415,6 +415,27 @@ p { margin: 0; }
 .cover dt { font-size: var(--s-xs); letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.7); }
 .cover dd { margin: 0; }
 @media (max-width: 760px) { .cover .cover-in .wrap { grid-template-columns: 1fr; } }
+/* Photo header on inner pages */
+.page-cover { height: 88svh; min-height: 560px; max-height: 980px; }
+.page-cover.short { height: 72svh; min-height: 520px; max-height: 820px; }
+.page-cover::after { background: linear-gradient(180deg, rgba(20,17,14,.55) 0%, rgba(20,17,14,.18) 30%, rgba(20,17,14,.28) 55%, rgba(20,17,14,.78) 100%); }
+.page-cover .cover-in .wrap { grid-template-columns: 1.4fr 1fr; gap: clamp(28px, 6vw, 96px); }
+.page-cover .cover-in .wrap > * { min-width: 0; }
+.page-cover h1 em { color: #E6DCC8; }
+.page-cover .side { display: grid; gap: 18px; justify-self: end; max-width: 42ch; color: rgba(255,255,255,.86); }
+.page-cover .side .count { font-family: var(--f-serif); font-size: var(--s-xl); line-height: 1; color: var(--white); }
+@media (max-width: 860px) { .page-cover .cover-in .wrap { grid-template-columns: 1fr; } .page-cover .side { justify-self: start; } }
+/* Contact: copy stays left, the form card rises into the photo on the right */
+.page-cover.short .cover-in .wrap { grid-template-columns: 1fr 1.1fr; align-items: end; row-gap: 26px; }
+.page-cover.short .cover-in .wrap > div:first-child { grid-column: 1; }
+.page-cover.short .side { grid-column: 1; justify-self: start; }
+.page-cover.short h1 { font-size: var(--s-3xl); line-height: 1; }
+@media (max-width: 900px) { .page-cover.short .cover-in .wrap { grid-template-columns: 1fr; } }
+.contact-sec { padding-top: clamp(56px, 7vw, 100px); }
+@media (min-width: 901px) {
+  .contact-sec { padding-top: clamp(64px, 6vw, 96px); }
+  .contact-sec .form-card { position: relative; z-index: 3; margin-top: calc(-1 * clamp(160px, 16vw, 260px)); box-shadow: 0 30px 80px -40px rgba(20,17,14,.45); }
+}
 .pj-intro { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 7vw, 120px); align-items: start; }
 .pj-intro > * { min-width: 0; }
 .pj-intro .lede { font-size: var(--s-2xl); line-height: 1.12; }
