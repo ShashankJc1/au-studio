@@ -261,10 +261,13 @@
     if (!ss.get("auq") && !/contact\.html$/.test(location.pathname)) setTimeout(function () { if (!document.body.classList.contains("menu-open") && !$(".lb.on")) openQuote(false); }, $(".intro") ? 5600 : 2600);
   }
 
-  /* Enquiry forms (no backend yet: connect to a form service here) */
+  /* Enquiry forms: validated here, then emailed through Web3Forms using the key on <body data-form-key> */
+  var formKey = document.body.getAttribute("data-form-key") || "";
+  var waLink = $(".wa") ? $(".wa").href : "";
   $$("form[data-validate]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault(); var ok = true;
+      if (form.getAttribute("data-busy")) return;
       $$("[required]", form).forEach(function (inp) {
         var f = inp.closest(".field"), er = $(".err", f), v = (inp.value || "").trim(), m = "";
         if (!v) m = "Please fill this in.";
@@ -274,10 +277,32 @@
       });
       if (!ok) { var first = $(".field.invalid input, .field.invalid select", form); if (first) first.focus(); return; }
       var name = (form.elements.name.value || "").trim().split(" ")[0].replace(/[<>&"]/g, "");
-      $$(".field, .pills-wrap, button[type='submit']", form).forEach(function (x) { x.hidden = true; });
-      var d = document.createElement("div"); d.className = "done"; d.setAttribute("role", "status");
-      d.innerHTML = "<h3>Thank you, " + name + ".</h3><p class='muted'>A designer will call you within one working day to arrange your consultation.</p>";
-      form.appendChild(d);
+      var btn = $("button[type='submit']", form), label = btn.innerHTML, note = $(".form-note", form);
+      if (note) note.remove();
+      var thanks = function () {
+        $$(".field, .pills-wrap, button[type='submit']", form).forEach(function (x) { x.hidden = true; });
+        var d = document.createElement("div"); d.className = "done"; d.setAttribute("role", "status"); d.tabIndex = -1;
+        d.innerHTML = "<h3>Thank you, " + name + ".</h3><p class='muted'>A designer will call you within one working day to arrange your free visit.</p>";
+        form.appendChild(d); d.focus({ preventScroll: true });
+      };
+      var fail = function () {
+        form.removeAttribute("data-busy"); btn.disabled = false; btn.innerHTML = label;
+        var n = document.createElement("p"); n.className = "form-note full"; n.setAttribute("role", "alert");
+        n.innerHTML = "Sorry, that didn't go through. Please try again" + (waLink ? ", or <a href='" + waLink + "' target='_blank' rel='noopener'>message us on WhatsApp</a>." : ".");
+        btn.parentNode.appendChild(n);
+      };
+      if (form.elements.botcheck && form.elements.botcheck.checked) { thanks(); return; }
+      if (!formKey) { thanks(); return; }
+      var data = { access_key: formKey, subject: (form.getAttribute("data-subject") || "Website enquiry") + " from " + name, from_name: "AU Studio website", page: location.href };
+      Array.prototype.forEach.call(form.elements, function (el) {
+        if (!el.name || el.name === "botcheck" || ((el.type === "radio" || el.type === "checkbox") && !el.checked)) return;
+        if ((el.value || "").trim()) data[{ type: "project", time: "best_time_to_call" }[el.name] || el.name] = el.value.trim();
+      });
+      form.setAttribute("data-busy", "1"); btn.disabled = true; btn.innerHTML = "Sending…";
+      fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json(); })
+        .then(function (j) { if (!j || !j.success) throw new Error("not sent"); thanks(); })
+        .catch(fail);
     });
     form.addEventListener("input", function (e) { var f = e.target.closest(".field.invalid"); if (f) { f.classList.remove("invalid"); $(".err", f).textContent = ""; } });
   });

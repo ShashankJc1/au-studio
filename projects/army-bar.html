@@ -15,13 +15,13 @@
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@400;500&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231A1815'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='24' letter-spacing='2' fill='%23EEE9E0' text-anchor='middle'%3EAU%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/css/site.css?v=3c11aed7">
+<link rel="stylesheet" href="../assets/css/site.css?v=98b1f24e">
 <script src="../assets/vendor/gsap.min.js" defer></script>
 <script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="../assets/vendor/lenis.min.js" defer></script>
-<script src="../assets/js/site.js?v=29516220" defer></script>
+<script src="../assets/js/site.js?v=73a06f40" defer></script>
 </head>
-<body>
+<body data-form-key="">
 <a class="skip" href="#main">Skip to content</a>
 <div class="curtain" aria-hidden="true"><b>AU</b></div>
 <header class="header">
@@ -102,7 +102,7 @@
       <span class="label">No cost, no obligation</span>
       <h2 id="qm-title">Get a <em>free quote</em></h2>
       <p class="qm-lede">We'll visit your space, take measurements and share a first design idea with an estimate. It's free.</p>
-      <form class="form qm-form" data-validate novalidate aria-label="Get a free quote">
+      <form class="form qm-form" data-validate data-subject="Free quote request" novalidate aria-label="Get a free quote"><input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" autocomplete="name" required><span class="err"></span></div>
         <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><span class="err"></span></div>
         <div class="field"><label for="q-type">Project</label><select id="q-type" name="type" required><option value="">Choose one</option><option>Full home</option><option>Kitchen &amp; wardrobes</option><option>Office</option><option>Café, restaurant or bar</option><option>Salon, spa or clinic</option><option>Something else</option></select><span class="err"></span></div>
