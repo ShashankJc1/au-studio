@@ -2,7 +2,7 @@
 
 Static website for AU Studio, an interior design and build studio. Plain HTML, CSS and JavaScript, with GSAP (ScrollTrigger, Flip) and Lenis vendored in `assets/vendor/`.
 
-**Live:** https://austudio.in (GitHub Pages, custom domain set in `CNAME`)
+**Live:** https://shashankjc1.github.io/au-studio/
 
 ## Pages
 - `index.html`: home
