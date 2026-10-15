@@ -237,6 +237,30 @@
     showVoice(0);
   }
 
+  /* Free quote popup: opens once per visit shortly after landing, and from any [data-quote] button */
+  var qm = $("#quote");
+  if (qm) {
+    var qLast = null, qCard = $(".qm-card", qm);
+    qCard.setAttribute("tabindex", "-1");
+    var openQuote = function (fromClick) {
+      if (!qm.hidden) return;
+      qLast = document.activeElement; qm.hidden = false; ss.set("auq", "1");
+      requestAnimationFrame(function () { requestAnimationFrame(function () { qm.classList.add("on"); }); });
+      document.body.classList.add("qm-open"); if (lenis) lenis.stop();
+      setTimeout(function () { var f = fromClick && fine ? $("input", qm) : qCard; f.focus({ preventScroll: true }); }, 350);
+    };
+    var closeQuote = function () {
+      if (qm.hidden) return;
+      qm.classList.remove("on"); document.body.classList.remove("qm-open"); if (lenis) lenis.start();
+      setTimeout(function () { qm.hidden = true; }, 500);
+      if (qLast && qLast.focus) qLast.focus({ preventScroll: true });
+    };
+    $$("[data-quote]").forEach(function (b) { b.addEventListener("click", function (e) { e.preventDefault(); closeMenu(); openQuote(true); }); });
+    $$("[data-quote-close]", qm).forEach(function (b) { b.addEventListener("click", closeQuote); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeQuote(); });
+    if (!ss.get("auq") && !/contact\.html$/.test(location.pathname)) setTimeout(function () { if (!document.body.classList.contains("menu-open") && !$(".lb.on")) openQuote(false); }, $(".intro") ? 5600 : 2600);
+  }
+
   /* Enquiry forms (no backend yet: connect to a form service here) */
   $$("form[data-validate]").forEach(function (form) {
     form.addEventListener("submit", function (e) {

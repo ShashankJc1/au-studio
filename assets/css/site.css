@@ -1,3 +1,4 @@
+[hidden] { display: none !important; }
 /* AU Studio — v3 site styles
    Concept: a quiet, photo-led editorial site. Warm stone surfaces, espresso ink,
    one smoked-olive accent. Light serif display against a clean geometric sans.
@@ -608,3 +609,36 @@ p { margin: 0; }
 .lost h1 { font-size: var(--s-hero); }
 .lost h1 em { color: var(--olive); }
 .lost p { color: var(--muted); max-width: 40ch; }
+
+/* ---------- Free quote ---------- */
+.quote-btn { white-space: nowrap; font: 500 var(--s-xs)/1 var(--f-sans); letter-spacing: .2em; text-transform: uppercase; padding: 12px 18px 11px; border: 1px solid currentColor; background: none; color: inherit; cursor: pointer; transition: background .4s, color .4s, border-color .4s; }
+.quote-btn:hover { background: var(--ink); border-color: var(--ink); color: var(--stone); }
+.header:not(.solid) .quote-btn:hover { background: var(--white); border-color: var(--white); color: var(--ink); }
+.menu-open .quote-btn { visibility: hidden; }
+@media (max-width: 980px) { .nav.right { gap: 18px; } .quote-btn { padding: 9px 12px 8px; letter-spacing: .14em; font-size: .62rem; } }
+@media (max-width: 480px) { .menu-btn b { display: none; } .nav.right { gap: 14px; } .brand small { white-space: nowrap; letter-spacing: .26em; } }
+.qm { position: fixed; inset: 0; z-index: 390; display: grid; place-items: center; padding: 20px; }
+.qm[hidden] { display: none; }
+.qm-back { position: absolute; inset: 0; background: rgba(20,17,14,.6); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); opacity: 0; transition: opacity .5s var(--ease); }
+.qm-card { position: relative; width: min(940px, 100%); max-height: calc(100svh - 40px); overflow: auto; overscroll-behavior: contain; background: var(--stone); display: grid; grid-template-columns: .85fr 1fr; opacity: 0; transform: translateY(36px) scale(.985); transition: opacity .5s var(--ease), transform .7s var(--ease); box-shadow: 0 40px 100px -40px rgba(0,0,0,.6); outline: none; }
+.qm.on .qm-back { opacity: 1; }
+.qm.on .qm-card { opacity: 1; transform: none; }
+.qm-pic { position: relative; min-height: 100%; color: var(--white); }
+.qm-pic img { position: absolute; inset: 0; height: 100%; }
+.qm-pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,17,14,0) 35%, rgba(20,17,14,.75)); }
+.qm-pic p { position: absolute; z-index: 2; left: clamp(22px, 3vw, 34px); bottom: clamp(20px, 3vw, 32px); margin: 0; font-family: var(--f-serif); font-weight: 300; font-size: var(--s-xl); line-height: 1.1; }
+.qm-pic em { color: #E6DCC8; }
+.qm-body { padding: clamp(28px, 4vw, 52px); display: grid; gap: 14px; align-content: start; }
+.qm-body h2 { font-size: clamp(2.1rem, 1.4rem + 2.2vw, 3.2rem); line-height: 1; }
+.qm-body h2 em { color: var(--olive); }
+.qm-lede { color: var(--muted); font-size: var(--s-sm); max-width: 40ch; }
+.qm-form { margin-top: 8px; gap: 20px 24px; }
+.qm-x { position: absolute; top: 8px; right: 10px; z-index: 3; width: 44px; height: 44px; border: 0; background: none; font-size: 2rem; line-height: 1; cursor: pointer; color: var(--ink); }
+@media (max-width: 760px) {
+  .qm { padding: 0; place-items: end stretch; }
+  .qm-card { grid-template-columns: 1fr; max-height: 94svh; }
+  .qm-pic { min-height: 0; height: 140px; }
+  .qm-x { color: var(--white); }
+  .qm-form { grid-template-columns: 1fr 1fr; }
+  .qm-form .field:nth-child(3), .qm-form .field:nth-child(4) { grid-column: 1 / -1; }
+}
